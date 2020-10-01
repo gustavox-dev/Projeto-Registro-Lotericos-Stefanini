@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Registro de dados</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/registro.css">
+	</head>
+	<body>
+		<div id="lateral">
+			<div id="menu">
+				<h3 class="link-titulo">Links uteis</h3>
+				<ul class="box">
+					<li><a href="#">Serviços.caixa</a></li>
+					<li><a href="#">Sispl</a></li>
+					<li><a href="#">Diagrama</a></li>
+					<li><a href="#">Can.Conhecimento</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="fundo">
+			
+			<div id="conteudo">
+				<!-- <h1><a href="script.html" target="_blank">Script de atendimento</a></h1> -->
+				
+				<div id="logo-stefanini">
+					<figure >
+						<img src="img/Logo-Stefanini.jpg" alt="stefanini">
+					</figure>
+				</div>
+				<hr>
+				<!-- <h3>Dados iniciais</h3> -->
+					<form>
+						<fieldset>
+							<legend><b>Dados para registro</b> </legend>
+							<label style="margin-right: 91px;" for="fname" id="nome"><b>Nome:</b></label>
+							<input type="text" id="fname" name="fname" placeholder="EX: Marcos"><br><br>
+							
+							<label style="margin-right: 60px;"  for="matricula"><b>Matricula:</b></label>
+							<input type="text" id="matricula" name="matricula" value="C"><br><br>
+							
+							
+							<label style="margin-right: 40px;"  for="serie"><b>Nome Logico: </b></label>
+							<input type="text" id="serie" name="serie" placeholder="EX: DF5246ET105"><br><br>
+									
+													
+                                
+                            <!--<button onclick="adicionar()"> Adicionar paragrafo</button>-->
+
+							<h4>Descrição</h4>
+							<textarea id="link" style="width:400px; height:280px;">Usuário informa que </textarea><br>
+							<button type="button" onclick="copiarTexto()">Copiar Script</button>
+							<button>Reset Script</button>
+
+						</fieldset>
+					</form>
+					<hr>
+					<div id="hardware">
+						
+							
+						</div>
+						
+						<div class="comunicacao">
+							
+						</div>
+			</div>
+			
+			<footer>
+				<hr>
+				<p>Compyright &copy <b>Gustavo Xavier</b> P782099</p>
+				<hr>
+			</footer>
+			
+		</div>
+		<!-- <div style="clear: both;"> -->
+		<script>
+		  function copiarTexto() {
+			var textoCopiado = document.getElementById("link");
+			textoCopiado.select();
+			document.execCommand("Copy");
+			alert(textoCopiado.value);
+		  }
+		  
+		  function copiarTextoHardware() {
+			var textoCopiado = document.getElementById("linkHardware");
+			textoCopiado.select();
+			document.execCommand("Copy");
+			
+		  }
+
+          function adicionar () {
+              var nome = document.getElementById("nome").value;
+              var adNome = document.getElementById("hardware").innerHTML;
+              var txtarea = document.getElementById("link");
+              adNome = adNome + "<p>"+nome+"</p>";
+
+              document.getElementById("adNome").innerHTML = adNome;
+          }
+		  
+		 /* var copyTextareaBtn = document.querySelector('.copiar');
+
+			copyTextareaBtn.addEventListener('click', function(event) {
+			  var copyTextarea = document.querySelector('.textarea');
+			  copyTextarea.select();
+
+			  try {
+				var successful = document.execCommand('copy');
+				var msg = successful ? 'sim!' : 'não!';
+				alert('Texto copiado? ' + msg);
+			  } catch (err) {
+				alert('Opa, Não conseguimos copiar o texto, é possivel que o seu navegador não tenha suporte, tente usar Crtl+C.');
+			  }
+			});*/
+		</script> 
+	</body>
+</html>

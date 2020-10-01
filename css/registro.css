@@ -1,0 +1,215 @@
+body {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    /*margin-top: 5px;*/
+    background-color: #CCC;
+    border-radius: 5px;
+    background: url('../img/loterias.png');
+}
+
+#fundo {
+    background-color: white;
+    overflow: auto;
+    margin: 0 auto;
+    border-radius: 5px;
+    width: 75%;
+    max-width: 920px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 40px;
+    
+}
+
+#conteudo {
+    margin: 10px;
+}
+
+#hardware {
+    float: left;
+}
+
+.comunicacao {
+    float: left;
+}
+
+.comunicacao {
+    float: right;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+/*
+ul {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-right: 10px;
+    position: fixed;
+    right: 5px;
+    background-color: rgb(40, 52, 126);
+    list-style: none;
+    opacity: 1;
+}
+
+ul li {
+    border: 1px solid red;
+    margin-left: -25px;
+    background-color: rgb(237, 121, 34);
+    text-align: left;
+        
+}
+
+ul li a {
+    border-radius: 5px;
+    
+    padding: 5px;
+    color: white;
+    text-align: left;
+}*/
+
+#lateral {
+    padding: 0 50px 0 0;
+    -moz-transition: all 0.5s ease;
+		-webkit-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+    font-size: 1.2em;
+    background:rgb(44,62,80);
+	background-image: -moz-linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79));
+     background-image: -webkit-linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79));
+      background-image: -o-linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79) );
+       background-image: -ms-linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79));
+        background-image: linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79));
+    height: 100%;
+    overflow: hidden;
+    width: 240px;
+    position: fixed;
+    top: 0;
+    left: -220px;
+}
+
+#lateral-before {
+    z-index: 1000;
+    content: url('Loterias-caixa.png');
+    font-size: 4em;
+    color: white;
+    position: fixed;
+    left: 4px;
+    top: 45px;
+}
+
+#lateral:hover:before, #lateral:focus:before {
+    left:-500px;
+}
+
+#lateral:hover, #lateral:focus,  #lateral:active  {
+	overflow-y:scroll;
+	-moz-transform: translate(320px, 0);
+		-webkit-transform: translate(320px, 0);
+			-o-transform: translate(320px, 0);
+				transform: translate(220px, 0);
+	padding-right:0;
+}	
+
+#lateral .box {
+    list-style-type: none;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+}
+
+#lateral h3 {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.0em;
+    font-style: normal;
+    padding-bottom: 0.2em;
+    margin: 2em 0 2em 0 0.81em;
+    color: rgb(255, 255, 255);
+    border-bottom: 4px solid rgb(155, 155, 155);
+}
+
+#menu {
+    font-style: italic;
+    position: relative;
+    font-size: 1.0em;
+    margin: 1em 0 1em -1em;
+}
+
+#menu li {padding: 0; margin: 0;}
+#menu li a, #menu li a:link {
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 0.8em 0 0.8em 1em;
+    display: block;
+    -moz-transition: all 1.2s ease;
+			-webkit-transition: all 1.2s ease;
+				-o-transition: all 1.2s ease;
+					transition: all 1.2s ease;
+}
+#menu li a:hover {
+	color:rgb(255,255,255);
+	background-color:rgba(255,255,255,0.2);
+	-moz-transition: all 0.5s ease;
+			-webkit-transition: all 0.5s ease;
+				-o-transition: all 0.5s ease;
+					transition: all 0.5s ease;
+	}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    text-align: left;
+    font-family: Blippo, fantasy;
+}
+
+h3 {
+    text-align: center;
+    background-color: rgb(36, 49, 122);
+    color: white;
+    border-radius: 5px;
+}
+
+h4 {
+    font-family: Blippo, fantasy;
+    font-size: 20px;
+}
+
+input {
+    padding: 2px;
+    border-radius: 10px;
+    background-color: #FFFF;
+}
+    
+textarea {
+    border-radius: 10px;
+    font-family: Gill Sans, sans-serif;
+    padding: 5px;;
+}
+button {
+    padding: 5px;
+    border: 0px solid;
+    border-radius: 5px;
+    border: 1px solid #108811;
+}
+
+button:hover {
+    background-color: #108811;
+    font: bold;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    clear: both;
+}
+
+

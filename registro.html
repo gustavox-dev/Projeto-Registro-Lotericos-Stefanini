@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Registro de dados</title>
+		<meta charset="utf-8">
+		<style>
+			body {
+				width: 100%;
+				min-width: 100%;
+				max-width: 100%;
+				margin: 0 auto;
+				/*margin-top: 5px;*/
+				background-color: #CCC;
+				border-radius: 5px;
+				background: url('img/loterias.png');
+			}
+			
+			#fundo {
+				background-color: white;
+				overflow: auto;
+				margin: 0 auto;
+				border-radius: 5px;
+				width: 75%;
+				max-width: 920px;
+				border: 1px solid black;
+				box-shadow: 0px 0px 40px;
+				
+			}
+			
+			#conteudo {
+				margin: 10px;
+			}
+			
+			#hardware {
+				float: left;
+			}
+			
+			.comunicacao {
+				float: left;
+			}
+			
+			.comunicacao {
+				float: right;
+			}
+			
+			#logo-stefanini {
+				margin-left: 120px;
+				width: 180px;
+				min-width: 25%;
+				text-align: center;
+			}
+			
+			li {
+				border: 1px solid black;
+				border-radius: 10px;
+				padding-right: 10px;
+				position: fixed;
+				right: 5px;
+				max-width: 213%;
+				background-color: rgb(40, 52, 126);
+				list-style: none;
+				opacity: 1;
+			}
+
+			li ul {
+				margin-left: -29px;
+				text-align: left;
+					
+			}
+
+			li ul a {
+				border-radius: 5px;
+				background-color: rgb(237, 121, 34);
+				padding: 5px;
+				color: white;
+				text-align: left;
+			}
+
+			a{
+				text-decoration: none;
+			}
+			
+			h1{
+				text-align: left;
+				font-family: Blippo, fantasy;
+			}
+			
+			h3 {
+				text-align: center;
+				background-color: rgb(36, 49, 122);
+				color: white;
+				border-radius: 5px;
+			}
+			
+			h4 {
+				font-family: Blippo, fantasy;
+				font-size: 20px;
+			}
+			
+			input {
+				padding: 2px;
+				border-radius: 10px;
+				background-color: #FFFF;
+			}
+				
+			textarea {
+				border-radius: 10px;
+				font-family: Gill Sans, sans-serif;
+			}
+			button {
+				padding: 5px;
+				border: 0px solid;
+				border-radius: 5px;
+			}
+			
+			button:hover {
+				background-color: #108811;
+			}
+
+			footer {
+				background-color: black;
+				color: white;
+				padding: 5px;
+				text-align: center;
+				clear: both;
+			}
+			
+			#cars {
+				border-radius: 10px;
+				padding: 2px;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<li>
+			<ul><a href="#">Serviços.caixa</a></ul>
+			<ul><a href="#">Sispl</a></ul>
+			<ul><a href="#">Diagrama</a></ul>
+			<ul><a href="#">Can.Conhecimento</a></ul>
+		</li>
+		<div id="fundo">
+			
+			<div id="conteudo">
+				<!-- <h1><a href="script.html" target="_blank">Script de atendimento</a></h1> -->
+				
+
+				<figure id="logo-stefanini">
+					<img src="img/Logo-Stefanini.jpg" alt="stefanini">
+				</figure>
+				<hr>
+				<!-- <h3>Dados iniciais</h3> -->
+					<form>
+						<fieldset>
+							<legend><b>Dados para registro</b> </legend>
+							<label style="margin-right: 81px;" for="fname"><b>Nome:</b></label>
+							<input type="text" id="fname" name="fname" placeholder="EX: Marcos"><br><br>
+							
+							<label style="margin-right: 25px;"  for="ulCode"><b>Código da UL:</b></label>
+							<input type="number" id="ulCode" name="ulCode" placeholder="EX: 080068725"><br><br>
+							
+							<label for="codeLoterico"><b>Código abreviado:</b></label>
+							<input type="text" id="codeLoterico" name="codeLoterico" value="LT" ><br><br>
+							
+							<label style="margin-right: 86px;"  for="serie"><b>Série:</b></label>
+							<input type="text" id="serie" name="serie" placeholder="EX: 25456872"><br><br>
+									
+							<label style="margin-right: 58px;"  for="terminal"><b>Terminal:</b></label>
+							<input type="text" id="terminal" name="terminal" placeholder="EX: 057845"><br><br>
+							
+							<label style="margin-right: 29px;"  for="cars"><b>Equipamento:</b></label>
+
+							
+								<select id="cars link">
+									<option value=""> </option>
+									<option  value="pinpad">Pinpad</option>
+									<option value="impressora">Impressora Térmica</option>
+									<option value="leitoraVolante">Leitora de Volante</option>
+									<option value="leitoraCodigo">Leitora de Código de Barras</option>
+									<option value="teclado">Teclado</option>
+								</select>
+
+							<h4>Descrição</h4>
+							<textarea id="link" style="width:400px; height:280px;">EL informa que </textarea><br>
+							<button type="button" onclick="copiarTexto()">Copiar Script</button>
+							<button>Reset Script</button>
+
+						</fieldset>
+					</form>
+					<hr>
+					<div id="hardware">
+						<h3>HARDWARE</h3>
+							<div >
+								<p id="linkHardware">
+									<b>Código do UL:</b> <br>
+									<b>Nome e Telefone:</b> <br>
+									<b>Horário de funcionamento:</b> 08h00 às 18h00<br>
+									<b>Sábado:</b>  08h00 às 12h00 <br>
+									<b>Fecha em horário de almoço:</b> Não<br><br>
+
+									Prazo para atendimento: Foi informado o prazo de 06 a 15 horas úteis<br> após o aceite do fornecedor.<br><br>
+
+									Atenciosamente,<br>
+									Equipe de Atendimento – Lotéricos <br>
+									Service Desk CAIXA
+								</p>
+								<button type="button" onclick="copiarTextoHardware()">Copiar</button>
+							</div>	
+							
+						</div>
+						
+						<div class="comunicacao">
+							<h3>COMUNICAÇÃO</h3>
+							<p>
+								
+
+								<b>Código do Lotérico:</b> <br>
+								<b>Telefone:</b> <br>
+								<b>Quantidade de terminais da lotérica:</b> 4<br>
+								<b>Quantidade de terminais que estão com erro:</b> 4<br>
+								<b>Status do terminal (gateway, HTTP, DNS):</b> Vermelhas <br>
+								<b>Horário de funcionamento de Segunda a Sexta:</b> 08h00 às 18h00<br>
+								<b>Sábado:</b> 08h00 às 12h00<br>
+								<b>Fecha em horário de almoço:</b> Não<br><br>
+
+								Atenciosamente, <br>
+								Equipe de Atendimento Service Desk <br>
+								Suporte Tecnológico CAIXA <br>
+							</p>
+						</div>
+			</div>
+			
+			<footer>
+				<hr>
+				<p>Compyright &copy <b>Gustavo Xavier</b> P782099</p>
+				<hr>
+			</footer>
+			
+		</div>
+		<!-- <div style="clear: both;"> -->
+		<script>
+		  function copiarTexto() {
+			var textoCopiado = document.getElementById("link");
+			textoCopiado.select();
+			document.execCommand("Copy");
+			alert(textoCopiado.value);
+		  }
+		  
+		  function copiarTextoHardware() {
+			var textoCopiado = document.getElementById("linkHardware");
+			textoCopiado.select();
+			document.execCommand("Copy");
+			
+		  }
+		  
+		 /* var copyTextareaBtn = document.querySelector('.copiar');
+
+			copyTextareaBtn.addEventListener('click', function(event) {
+			  var copyTextarea = document.querySelector('.textarea');
+			  copyTextarea.select();
+
+			  try {
+				var successful = document.execCommand('copy');
+				var msg = successful ? 'sim!' : 'não!';
+				alert('Texto copiado? ' + msg);
+			  } catch (err) {
+				alert('Opa, Não conseguimos copiar o texto, é possivel que o seu navegador não tenha suporte, tente usar Crtl+C.');
+			  }
+			});*/
+		</script> 
+	</body>
+</html>
